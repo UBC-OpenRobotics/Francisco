@@ -148,7 +148,7 @@ def recognizeFace():
                     #Add label
                     cv2.rectangle(frame, (left, bottom-35), (right, bottom), (0,0,255), cv2.FILLED)
                     #Add name
-                    cv2.putText(frame, name, (left+6, bottom-6), cv2.FONT_HERSHEY_PLAIN, 1.0, (255,255,255),1)
+                    cv2.putText(frame, name + " {:.2f}%".format(max(prediction)*100), (left+6, bottom-6), cv2.FONT_HERSHEY_PLAIN, 1.0, (255,255,255),1)
 
             cv2.imshow('Video', frame)
 
