@@ -19,7 +19,7 @@ if args["numphotos"]:
 else:
 	NUMPHOTOS = 50
 
-dataset_path["dataset"]
+dataset_path=args["dataset"]
 name = args["name"]
 
 folder_path = os.path.join(dataset_path, name)
