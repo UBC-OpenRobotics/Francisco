@@ -13,4 +13,14 @@ This is done using three main tools - Feature Extraction, Acoustic Model, Decode
 
 ## Training Data
 
-I'll be using a subset of [*LibriSpeech*](http://www.openslr.org/12/) to train the ASR model
+I'll be using a subset of [*LibriSpeech*](http://www.openslr.org/12/) to train the ASR model. Specifically, I'm using *dev-clean.tar.gz*. All the audio files are flac, so I've converted them to wav using ffmpeg.
+
+Next, I generated a training and testing JSON which contained the duration of the .wav file, the text transcript and a pointer to the wav file itself.
+
+## Feature Extraction
+
+I'll be using the popular MFCC, which stands for *Mel Frequency Cepstral Coefficients*, and collectively, they make up a signal's Mel-Frequency Cepstral - which can be thought of as a short term power spectrum.
+
+*python_speech_features* has an implementation of mfcc which I'll be using.
+
+
