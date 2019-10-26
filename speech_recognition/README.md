@@ -10,3 +10,7 @@ This is done using three main tools - Feature Extraction, Acoustic Model, Decode
   * __Acoustic Model__ : Takes audio features and returns probability distrubtion over all possible transcriptions
 
   * __Decoder__ : Take probability distribution and output predicted transcription
+
+## Training Data
+
+I'll be using a subset of [*LibriSpeech*](http://www.openslr.org/12/) to train the ASR model
