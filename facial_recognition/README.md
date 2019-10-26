@@ -1,4 +1,4 @@
-# Francisco
+# Facial Recognition
 
 <b>face_recognition_dlib.py</b>
 <ul>
