@@ -24,3 +24,11 @@ I'll be using the popular MFCC, which stands for *Mel Frequency Cepstral Coeffic
 *python_speech_features* has an implementation of mfcc which I'll be using.
 
 
+# Speech Recognition in ROS
+
+For implementing speech recognition inside ROS, I will be using a pocketsphinx wrapper for ROS, allowing use of the CMUSphinx Speech recognizer.
+
+I will be using this implementation - https://github.com/Pankaj-Baranwal/pocketsphinx
+
+In addition to having the wrapper, we need a language model. I will be using the hub4wsj_sc_8k model found [*here*](https://www.google.com/url?q=https://sourceforge.net/projects/cmusphinx/files/Acoustic%2520and%2520Language%2520Models/Archive/US%2520English%2520HUB4WSJ%2520Acoustic%2520Model/&sa=D&ust=1579375130160000&usg=AFQjCNFBVru_4LZ-ORGAT5XunUzL3Ym1UA)
+
